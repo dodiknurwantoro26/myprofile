@@ -1,0 +1,34 @@
+name: Deploy PHP Native to InfinityFree
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Deploy to InfinityFree
+        uses: airvzxf/ftp-deployment-action@v2
+        with:
+          server: ftp://${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          local_dir: ./
+          remote_dir: /htdocs
+
+          ftp_ssl_allow: "true"
+          ssl_verify_certificate: "true"
+
+          exclude: |
+            **/.git/**
+            **/.github/**
+            README.md
+            .gitignore
