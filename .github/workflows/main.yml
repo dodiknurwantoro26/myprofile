@@ -15,20 +15,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to InfinityFree
-        uses: airvzxf/ftp-deployment-action@v2
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ftp://${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-
-          local_dir: ./
-          remote_dir: /htdocs
-
-          ftp_ssl_allow: "true"
-          ssl_verify_certificate: "true"
-
+          protocol: ftps
+          port: 21
+          server-dir: /htdocs/
+          local-dir: ./
           exclude: |
-            **/.git/**
+            **/.git*
+            **/.git*/**
             **/.github/**
             README.md
             .gitignore
