@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="K-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
+    <title>Document</title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,190 +13,307 @@
       rel="stylesheet"
     />
 
-    <!-- style -->
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skin/color-1.css" />
 
-    <!-- father icon -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- navbar start -->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">My Profile <span>I am</span>.</a>
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Kontak</a>
+    <!-- MAIN CONTAINER START -->
+    <div class="main-container">
+      <!-- begin::aside -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>Dodik</span> Nurwantoro</a>
+        </div>
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="" class="active"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-list"></i> Services</a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-briefcase"></i> Portofolio</a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-comments"></i> Contact</a>
+          </li>
+        </ul>
       </div>
+      <!-- end::aside -->
 
-      <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
-    <!-- navbar ends -->
-
-    <!-- hero section start -->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Welcome My Website <span>Profile</span></h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus consectetur voluptates reprehenderit esse at excepturi
-          alias modi pariatur molestiae quibusdam!
-        </p>
-        <a href="#" class="cta">details</a>
-      </main>
-    </section>
-    <!-- hero section end -->
-
-    <!-- about section start -->
-    <section id="about" class="about">
-      <h2><span>About</span> Me</h2>
-      <div class="row">
-        <div class="about-img">
-          <img src="img/about-me.jpg" alt="About Me" />
-        </div>
-        <div class="content">
-          <h3>This is about me</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            soluta.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
-            itaque. Temporibus, reiciendis. Iure odio alias dolorum consequatur
-            iusto nobis nemo consectetur, similique culpa beatae quaerat maiores
-            exercitationem adipisci esse natus!
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- about section end -->
-
-    <!-- project section start -->
-    <section id="project" class="project">
-      <h2><span>Project</span> Me</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-        quae qui praesentium illo ducimus molestias quo
-      </p>
-
-      <div class="row">
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-1.jpg"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-2.png"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-3.png"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-1.jpg"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-2.png"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="img/project/project-2.png"
-            alt="Apps ERP"
-          />
-          <h3 class="project-card-title">My Apps</h3>
-          <p class="project-card-detail">view detail</p>
-        </div>
-      </div>
-    </section>
-    <!-- project section end -->
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-      <h2><span>Contact</span> Me</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-        quae qui praesentium illo ducimus molestias quo
-      </p>
-      <div class="row">
-        <div class="contact-img">
-          <img src="img/contact.jpg" alt="Call Me" />
-        </div>
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
+      <!-- begin::Main Content Start -->
+      <div class="main-content">
+        <!-- begin::home section start -->
+        <section class="home section">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  Hello, My Name is <span class="name">Dodik Nurwantoro</span>
+                </h3>
+                <h3 class="my-profession">
+                  I' m a <span class="typing">Web Designer</span>
+                </h3>
+                <p>
+                  I, m a Web Designer with extensive experience for 10 years. My
+                  expertise is to create and website design, graphic design, and
+                  many more ...
+                </p>
+                <a href="#contact" class="btn hire-me">Hire Me</a>
+              </div>
+              <div class="home-img padd-15">
+                <img src="img/hero.jpg" alt="hero" />
+              </div>
+            </div>
           </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+        </section>
+        <!-- end::home section end -->
+
+        <!-- begin::about section end -->
+        <section class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>I'm Alimi Mausad and <span>Web Developer</span></h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Velit reiciendis provident nemo reprehenderit beatae odit
+                      quia nam mollitia deleniti, qui laudantium impedit. Minima
+                      quibusdam esse facilis nihil repellendus magni, enim vel
+                      incidunt veniam quia. Esse totam fugit ipsa aspernatur.
+                      Qui quibusdam hic eligendi et fuga fugiat odit praesentium
+                      error iure. Eligendi maiores perferendis debitis aut.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-item padd-15">
+                        <p>Brithday : <span>17 Sep 1999</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Age : <span>22</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Website : <span>www.domain.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Email : <span>info@gmail.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Degree : <span>CS</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Phone : <span>+62 8123 3456 7890</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>City : <span>Jakarta</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Freelancer : <span>Available</span></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>JS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 86%"></div>
+                          <div class="skill-percent">86%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>PHP</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 66%"></div>
+                          <div class="skill-percent">66%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>HTML</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 96%"></div>
+                          <div class="skill-percent">96%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Bootstrap</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- begin::timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <!-- end::timeline item -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- begin::timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2013 - 2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              Master In Computer Science
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Reiciendis consectetur veritatis ullam
+                              provident vitae. Ipsum, nam voluptatibus?
+                              Distinctio, tempore quia atque quod sapiente
+                              accusantium perferendis.
+                            </p>
+                          </div>
+                          <!-- end::timeline item -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="number" placeholder="phone" />
-          </div>
-
-          <button type="submit" class="btn">Kirim Pesan</button>
-        </form>
+        </section>
+        <!-- end::about section end -->
       </div>
-    </section>
-    <!-- contact section end -->
+      <!-- end::Main Content Start -->
+    </div>
+    <!-- MAIN CONTAINER END -->
 
-    <footer>
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
-        <a href="#"><i data-feather="linkedin"></i></a>
-      </div>
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="credit">
-        <p>Created by <a href="">Dodik Nurwantoro</a> | &copy; 2023.</p>
-      </div>
-    </footer>
-
-    <!-- father icon start -->
-    <script>
-      feather.replace();
-    </script>
-    <!-- father icon end -->
-
-    <!-- my java script -->
+    <!-- begin:java script -->
     <script src="js/script.js"></script>
+    <!-- end:java script -->
   </body>
 </html>
