@@ -252,14 +252,24 @@ ul {
   border-bottom: 1px solid var(--bg-black-50);
   color: var(--text-black-900);
   padding: 5px 15px;
+  transition: all 0.3s ease;
 }
 
+/* Hover dan Active */
+.aside .nav li a:hover,
 .aside .nav li a.active {
+  color: var(--skin-color);
+}
+
+/* Icon Hover dan Active */
+.aside .nav li a:hover i,
+.aside .nav li a.active i {
   color: var(--skin-color);
 }
 
 .aside .nav li a i {
   margin-right: 15px;
+  transition: all 0.3s ease;
 }
 
 /* home */
